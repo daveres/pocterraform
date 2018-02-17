@@ -21,6 +21,7 @@ variable "server_port" {
 }
 
 provider "aws" {
+   version = "~> 1.9"
    access_key = "${var.AWSACCESSKEY}"
    secret_key = "${var.AWSSECRETKEY}"
    region = "eu-west-3"
