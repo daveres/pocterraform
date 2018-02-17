@@ -1,0 +1,9 @@
+Use gcs as backend because it offers locking method (s3 not, dynamo is needed for blocking)
+
+You create a service account for the project where storage bucket is hosted and download the json file 
+IMPORTANT!!!: you have to add this file in the .gitignore to avoid upload to the source control
+
+Permission: you have to add the following roles to the service account at bucket level (not project)
+- Storage Object Admin
+- Storage Object Creator
+- Storage Object Viewer 

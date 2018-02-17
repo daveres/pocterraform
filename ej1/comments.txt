@@ -1,0 +1,4 @@
+You have to declare environment variables in form TF_VAR_xxx in order to be read by Terraform
+For example:
+set TF_VAR_AWSACCESSKEY = <your access key>
+set TF_VAR_AWSSECRETKEY = <your secret key>
